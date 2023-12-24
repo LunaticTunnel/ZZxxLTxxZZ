@@ -36,7 +36,7 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[46m            LUNATIC TUNNELING \033[0m"
+echo -e "\033[41;97;1m                  LUNATIC TUNNELING                 \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -772,7 +772,7 @@ echo "Banner /etc/banner.txt" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
 
 # Ganti Banner
-wget -O /etc/kyt.txt "${REPO}banner/issue.net"
+wget -O /etc/banner.txt "${REPO}banner/issue.net"
 print_success "Fail2ban"
 }
 
