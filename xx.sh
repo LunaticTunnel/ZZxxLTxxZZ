@@ -796,11 +796,11 @@ fi
 
 clear
 # banner
-echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
+echo "Banner /etc/banner.txt " >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # Ganti Banner
-wget -O /etc/issue.net "${REPO}banner/issue.net"
+wget -O /etc/banner.txt "${REPO}banner/issue.net"
 print_success "Fail2ban"
 }
 
