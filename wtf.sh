@@ -697,7 +697,8 @@ printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}cfg_conf_js/rclone.conf"
 #Install Wondershaper
 cd /bin
-git clone  https://github.com/magnific0/wondershaper.git
+#git clone  https://github.com/magnific0/wondershaper.git
+git clone  https://github.com/LunaticTunnel/wondershaper.git
 cd wondershaper
 sudo make install
 cd
@@ -998,7 +999,7 @@ rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
 echo -e "${green} install sukses ${NC}👍"
-sleep 3
+sleep 2
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} TO REBOOT") "
 reboot
